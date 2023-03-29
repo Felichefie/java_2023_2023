@@ -1,0 +1,5 @@
+Use Casino.java file to test yours class files,
+don't make/push another file with main function
+
+Before test, please download branch main
+Add .gitignore and Casino.java
