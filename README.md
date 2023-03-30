@@ -44,7 +44,7 @@ remote:
 To https://github.com/Felichefie/java_2023_2023.git
  * [new branch]      feliche_alumno -> feliche_alumno
 
- 
+ git request-pull origin https://github.com/Felichefie/java_2023_2023.git
 
 
 
