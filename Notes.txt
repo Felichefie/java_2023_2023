@@ -1,0 +1,10 @@
+Use Casino.java file to test yours class files,
+don't make/push another file with main function
+
+Before test, please download branch main
+Add .gitignore and Casino.java
+
+add GitHub Pull Requests and Issues on VSCode Extensions
+
+make git pull requests
+git request-pull -p origin <your-branch>
