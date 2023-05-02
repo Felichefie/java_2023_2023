@@ -25,14 +25,15 @@ public class Cubilete {
                 for (int i = 0; i < numPlayers; i++) {
                     System.out.println("\nEs el turno de " + playerNames[i]);
 
-                    int[] dice = new int[5];
+                    Dice[] dice = new Dice[5];
                     for (int j = 0; j < 5; j++) {
-                        dice[j] = rand.nextInt(6) + 1;
+                        dice[j] = new Dice();
+                        dice[j].roll();
                     }
 
                     System.out.print("Los dados son: ");
-                    for (int d : dice) {
-                        System.out.print(d + " ");
+                    for (Dice d : dice) {
+                        System.out.print(d.value + " ");
                     }
 
                     playerScores[i] = calculateScore(dice);
@@ -54,8 +55,9 @@ public class Cubilete {
         System.out.println("\nGracias por jugar a Cubilete");
     }
 
-    public static int calculateScore(int[] dice) {
-        Arrays.sort(dice);
+    public static int calculateScore(Dice[] dice) {
+        /* Arrays.sort() no funciona con Dice por ahora xd */
+        // Arrays.sort(dice);
         int score = 0;
 
         // Combinación de 1's
@@ -122,10 +124,10 @@ public class Cubilete {
         return score;
     }
     
-    public static int countDice(int[] dice, int value) {
+    public static int countDice(Dice[] dice, int value) {
         int count = 0;
-        for (int d : dice) {
-            if (d == value) {
+        for (Dice d : dice) {
+            if (d.value == value) {
                 count++;
             }
         }
