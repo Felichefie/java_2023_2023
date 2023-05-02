@@ -24,4 +24,3 @@ public class Dice {
         this.value = this.randGen.nextInt(6) + 1;
     }
 }
-//hola buenas tardes :v
